@@ -1,0 +1,4 @@
+name = "ImageText"
+uuid = "c38a2651-edf7-46a3-b55c-1b0f1c94b887"
+authors = ["kfgarrity <kevin.garrity@nist.gov>"]
+version = "0.1.0"
