@@ -28,7 +28,7 @@ contrast. Setting background to `:color` will produce a pixelated
 image using the background.
 
 
-<img src="./self_portrait_text2.PNG" alt="logo"  >
+<img src="./self_portrait_text2.PNG" alt="self"  >
 <br>
 <br>
 
@@ -125,5 +125,7 @@ image using the background.
 %%%%%%%%%%%%%%%%%@@@@@@@%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@%%%@%%%%%%%%%%%%%@%%@@%%%%%%%%%%%%%
 
 ```
+<br>
+<img src="./julia_logo.png" alt="logo"  >
 
 
