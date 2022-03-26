@@ -264,10 +264,12 @@ color_mat = [
 255  238  238  238
 ]
 
-function float_to_char(n; reverse=true)
+function float_to_char(n; reverse=true, a = 0.0, b = 1.0)
     if reverse
-        n=1.0-n
+        n=b-n
     end
+
+    n = (n - a) / (b - a)
     
     if n < 0.05
         return key[1]
@@ -275,11 +277,11 @@ function float_to_char(n; reverse=true)
         return key[2]
     elseif n < 0.15
         return key[3]
-    elseif n < 0.2
+    elseif n < 0.22
         return key[4]
-    elseif n < 0.3
+    elseif n < 0.33
         return key[5]
-    elseif n < 0.5
+    elseif n < 0.55
         return key[6]
     elseif n < 0.7
         return key[7]
@@ -317,9 +319,20 @@ function get_color(rgb)
     
 end
 
-function go(img; blackwhite=false, reverse=false, background=missing, text=:color)
+function go(img; blackwhite=false, reverse=false, background=missing, text=:color, rescale=true)
 
     gray_image = Gray.(img)
+
+    if rescale
+        arr = Float64.(gray_image)
+        a = minimum(arr)
+        b = maximum(arr)
+    else
+        a = 0.0
+        b = 1.0
+    end
+
+        
     nx,ny = size(gray_image)
 
     str = []
@@ -328,7 +341,7 @@ function go(img; blackwhite=false, reverse=false, background=missing, text=:colo
     for x = 1:nx
         vs = String[]
         for y = 1:ny
-            t = float_to_char(gray_image[x,y], reverse=reverse)
+            t = float_to_char(gray_image[x,y], reverse=reverse, a=a, b = b )
             push!(vs, t)
             color = get_color(img[x,y])
             if !blackwhite

@@ -18,7 +18,7 @@ ImageText.go(img2);
 Options for go
 
 ```
-go(img; blackwhite=false, reverse=false, background=missing, text=:color)
+go(img; blackwhite=false, reverse=false, background=missing, text=:color, rescale=false)
 ```
 
 You can play around depending on your image. Try `:black` and `:white`
