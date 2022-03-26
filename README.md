@@ -2,6 +2,8 @@
 
 Why would you want to do this? For fun!
 
+To be clear, this represents an image as ASCII art using the `julia` programming language and repl. It doesn't do anything useful like extract text from an image.
+
 ```
 using FileIO, Images, ImageText
 
@@ -26,7 +28,7 @@ contrast. Setting background to `:color` will produce a pixelated
 image using the background.
 
 
-<img src="./self_portrait_text2.PNG" alt="logo" width="300" >
+<img src="./self_portrait_text2.PNG" alt="logo"  >
 <br>
 <br>
 
