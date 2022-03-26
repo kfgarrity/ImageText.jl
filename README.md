@@ -2,6 +2,8 @@
 
 Why would you want to do this? For fun!
 
+To be clear, this represents an image as ASCII art using the `julia` programming language and repl. It doesn't do anything useful like extract text from an image.
+
 ```
 using FileIO, Images, ImageText
 
