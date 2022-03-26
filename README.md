@@ -24,8 +24,11 @@ as background colors, set text to a constant color, and use
 `reverse=true` to reverse contrast. Setting background to `:color` will produce a pixelated image.
 
 
-<img align="right" src="./self_portrait_text2.PNG" alt="logo" width="200" >
-
+<img align="left" src="./self_portrait_text2.PNG" alt="logo" width="300" >
+.
+.
+.
+.
 
 
 
