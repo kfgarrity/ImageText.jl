@@ -2,3 +2,7 @@ name = "ImageText"
 uuid = "c38a2651-edf7-46a3-b55c-1b0f1c94b887"
 authors = ["kfgarrity <kevin.garrity@nist.gov>"]
 version = "0.1.0"
+
+[deps]
+Crayons = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
