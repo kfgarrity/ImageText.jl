@@ -133,6 +133,6 @@ Also try changing the color scheme of your terminal. White text on black backgro
 <img src="./julia_logo.png" alt="logo"  >
 <br>
 <br>
-<img src="./julia_logo2.png" alt="logo"  >
+<img src="./julia_logo2.PNG" alt="logo"  >
 
 
