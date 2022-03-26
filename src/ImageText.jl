@@ -317,7 +317,7 @@ function get_color(rgb)
     
 end
 
-function go(img; blackwhite=false, reverse=false, background=:black, text=:color)
+function go(img; blackwhite=false, reverse=false, background=missing, text=:color)
 
     gray_image = Gray.(img)
     nx,ny = size(gray_image)
@@ -340,22 +340,32 @@ function go(img; blackwhite=false, reverse=false, background=:black, text=:color
                     forecolor=text
                 end
 
-                if background == :color
+                if ismissing(background)
+                    backcolor=missing
+                elseif background == :color
                     backcolor=color
                 else
                     backcolor=background
                 end
                 
 #                println("xx ", [forecolor, backcolor])
-
-                print(Crayon(foreground = forecolor, background=backcolor), t)
+                if ismissing(background)
+                    printstyled(t, color=forecolor)
+                else
+                    print(Crayon(foreground = forecolor, background=backcolor), t)
+                end
             end
         end
         push!(str, vs)
         if blackwhite
             println(join(vs))
         else
-            println()
+            if ismissing(background)
+                println()
+            else
+                print(Crayon(background=:white), " \n")
+            end
+#            println()
         end
         
     end

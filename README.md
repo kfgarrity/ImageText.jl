@@ -18,11 +18,11 @@ ImageText.go(img2);
 Options for go
 
 ```
-go(img; blackwhite=false, reverse=false, background=:black, text=:color)
+go(img; blackwhite=false, reverse=false, background=missing, text=:color)
 ```
 
 You can play around depending on your image. Try `:black` and `:white`
-as background colors, set text to a constant color (default is :color,
+as background colors, set text to a constant color (default is `:color`,
 which uses the image color). Use `reverse=true` to reverse
 contrast. Setting background to `:color` will produce a pixelated
 image using the background.
