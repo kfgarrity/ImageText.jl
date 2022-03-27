@@ -31,8 +31,11 @@ image using the background. Rescale will scale the intensity to use the full 0-1
 
 Also try changing the color scheme of your terminal. White text on black background often looks better.
 
-
+<br>
+Eiffel tower
 <img src="./tower.png" alt="eiffel"  >
+<br>
+Self-portrait.
 <br>
 <img src="./self_portrait_text2.PNG" alt="self"  >
 <br>
@@ -132,6 +135,7 @@ Also try changing the color scheme of your terminal. White text on black backgro
 
 ```
 <br>
+julia
 <br>
 <img src="./julia_logo2.PNG" alt="logo"  >
 
